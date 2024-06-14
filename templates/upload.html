@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title >
+            upload image 
+        </title>
+        <style>
+            body {
+                background-image: url("static/upload.jpg");
+                background-size: cover;
+            }
+            p{
+                color:aqua;
+                font-size: 30px;
+                text-align: center ;
+                margin-top: 3%;
+            }
+            .box{
+                margin-top: 20%;
+                margin-left: 40%;
+            }
+            .box input {
+                    font-size: 20px;
+
+            }
+            .box input[type="submit"]
+            
+            {
+                color:rgb(1, 8, 12);
+                background-color: aqua;
+            }
+            .box input[type="file"]
+            
+            {
+                color:rgb(250, 252, 253);
+               
+            }
+            .box input[type="submit"]
+            
+            {
+                color:rgb(1, 7, 10);
+               
+            }
+
+            
+        </style>
+    </head>
+    <body >
+       
+            
+      
+        <p>Upload your leaf image </p>
+        <div class="box">
+            <form action = "/upload_image" method = "post" enctype="multipart/form-data">  
+            <input type="file" name="file" id="file-upload_1" onchange="showname()" accept=".png, .jpg, .jpeg"/>  <br><br>
+            <input type = "submit" >  
+            </form>
+                            
+        </div>
+
+    </body>
+</html>
